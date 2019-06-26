@@ -47,7 +47,7 @@
   {
     "name": "Lower Mt Queple Trail",
     "id": 4,
-    "actions": [ "Mining", "Battle", "Carve totem pole:Cheap Wood Shavings" ],
+    "actions": [ "Mining", "Battle", "Carve totem pole:Cheap Totem" ],
     "isUnlocked": false,
     "description": "As you begin your ascent up the mountain, you notice the mouth of a cave off to the side of the path. A large totem pole stands near its entrance. Along the mountain side you can see deposits of copper, tin, iron, and calamine.",
     "areaURL": "lowerMtQuepleTrail",
@@ -121,7 +121,7 @@
     "description": "There are a lot of fish here.",
     "areaURL": "QCRiver",
     "icon": "oi oi-droplet",
-    "monsterIDs": [ 15, 24, 25, 26, 27 ]
+    "monsterIDs": [ 15, 24, 25, 26, 27, 39 ]
   },
   {
     "name": "Deep Cave Hunting Area",
@@ -320,7 +320,7 @@
     "areaURL": "NorthernIslesTrails",
     "icon": "oi oi-fire",
     "unlockableAreas": [ "The Foot of Mt Yama,Destroy the rock with your strength,Strength:45,", "The Foot of Mt Yama,Destroy the rock with your mining skills,Mining:40,Mining" ],
-    "actions": [ "Carve Totem Pole:Nice Wood Shavings", "Chop Maple Trees:Sugar Maple Logs" ]
+    "actions": [ "Carve totem Pole:Nice Totem", "Chop Maple Trees:Sugar Maple Logs" ]
   },
   {
     "name": "The Foot of Mt Yama",
@@ -400,7 +400,7 @@
     "icon": "oi oi-signpost",
     "id": 38,
     "actionRequiredForAccess": "Desert Travel",
-    "actions": [ "Carve Totem Pole:Exquisite Wood Shavings" ],
+    "actions": [ "Carve totem pole:Exquisite Totem" ],
     "unlockableAreas": [ "Oasis,Continue Southward,,", "Leupp,Go West,,", "Abandoned Desert Shack,Go East,," ],
     "redirectAreaURL": "Route7",
     "npcIDs": [ 18 ]
@@ -411,7 +411,7 @@
     "areaURL": "StrangeOldHut",
     "icon": "oi oi-bug",
     "id": 39,
-    "actions": [ "Mine Coal:Coal", "Carve Totem:Wood Shavings" ],
+    "actions": [ "Mine Coal:Coal", "Carve totem:Totem" ],
     "unlockableAreas": [ "Swamplake,Go around the hill,," ],
     "buildings": [ "EarthHall" ]
   },
@@ -552,7 +552,7 @@
     "isUnlocked": false,
     "description": "A mountain range.",
     "icon": "oi oi-graph",
-    "children": [ "ShoeLake", "TsuValley", "TreeNursery", "WestTsuCity", "CentralTsuCity", "TsuCastle", "EastTsuCity", "NorthTsuCity" ]
+    "children": [ "ShoeLake", "TsuValley", "TreeNursery", "WestTsuCity", "CentralTsuCity", "TsuCastle", "EastTsuCity", "NorthTsuCity", "Garden" ]
   },
   {
     "name": "Great Shoe Lake",
@@ -584,7 +584,7 @@
     "description": "The road leads you through a tree nursery. There are plenty of trees to chop down here, but it looks like someone else owns them.",
     "icon": "oi oi-rain",
     "unlockableAreas": [ "West Tsu City,Follow the road into town,," ],
-    "npcIDs": [ 26, 48 ]
+    "npcIDs": [ 26, 62 ]
   },
   {
     "name": "West Tsu City",
@@ -635,7 +635,8 @@
     "isUnlocked": false,
     "description": "You pass by the castle heading north and reach a quiet residential area. You can see the entrance to a massive garden up ahead.",
     "icon": "oi oi-link-intact",
-    "npcIDs": [ 33, 47 ]
+    "npcIDs": [ 33, 47 ],
+    "unlockableAreas": [ "Great Garden, Pay the bribe,,Pay Gold:15000" ]
   },
   {
     "name": "Hoin River Valley",
@@ -655,7 +656,8 @@
     "description": "You reach a river surrounded on both sides by thick foliage. You'll have to float down the river if you want to continue.",
     "icon": "oi oi-action-redo",
     "npcIDs": [ 50 ],
-    "unlockableAreas": [ "The Hoin River,Ride down stream,," ]
+    "unlockableAreas": [ "The Hoin River,Ride down stream,," ],
+    "areaToUnlockOnArrival": "Hoin River Valley"
   },
   {
     "name": "Plantrain Plains",
@@ -680,11 +682,11 @@
     "description": "A solitary building sits just off the shore of the river. It's flanked by an extremely old graveyard.",
     "icon": "oi oi-cloudy",
     "npcIDs": [ 53 ],
-    "buildings": [ "TammysTannery"],
-    "unlockableAreas": [ "Guttermouth,Float to the village,," ],
+    "buildings": [ "TammysTannery" ],
     "actionRequiredForAccess": "Rafting",
     "actions": [ "Battle" ],
-    "monsterIDs": [31, 32, 33, 34, 35, 36, 37, 38]
+    "monsterIDs": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+    "unlockableAreas": [ "Guttermouth,Continue down the river,," ]
   },
   {
     "name": "Guttermouth",
@@ -694,8 +696,8 @@
     "description": "You begin to reach signs of civilization. Down at the river's mouth you can see a large city. A number of houses surround the main building here, which has the word 'Woodworks' carved on the front of it.",
     "icon": "oi oi-eye",
     "buildings": [ "WoodWorkersAssociation" ],
-    "unlockableAreas": [ "Ricechild,Ride to the river's mouth,," ],
-    "actionRequiredForAccess": "Rafting"
+    "actionRequiredForAccess": "Rafting",
+    "npcIDs": [ 11 ]
   },
   {
     "name": "Ricechild",
@@ -704,8 +706,8 @@
     "isUnlocked": false,
     "description": "You reach a bustling city at the mouth of the river. There are a few interesting shops here.",
     "icon": "oi oi-people",
-    "actionRequiredForAccess": "Rafting",
-    "npcIDs": [ 11 ]
+    "actionRequiredForAccess": "Rafting"
+
   },
   {
     "name": "The Hoin River",
@@ -717,6 +719,14 @@
     "unlockableAreas": [ "Plantrain Plains,Continue floating,," ],
     "actions": [ "Harpoon Fishing" ],
     "actionRequiredForAccess": "Rafting"
+  },
+  {
+    "name": "Great Garden",
+    "id": 69,
+    "areaURL": "Garden",
+    "description": "You enter a beautiful garden, full of flowers, trees, and an expansive pond. A central field has the perfect spot to do some yoga.",
+    "icon": "oi oi-sun",
+    "actions": [ "Yoga" ]
   }
 
 ]

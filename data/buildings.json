@@ -472,7 +472,7 @@
     "name": "Mound's Boats",
     "id": 58,
     "url": "MoundsBoats",
-    "description": "At the kiosk you meet Mound, who sells two different sized boats.",
+    "description": "At the kiosk you meet Gordo, who greets you nervously.",
     "isShop": true,
     "items": [ 245, 246 ],
     "npcIDs": [ 23 ]
@@ -511,12 +511,22 @@
     "url": "TammysTannery",
     "description": "You enter the tannery and are greeted by Tammy. There are a number of meat products you can buy here.",
     "isShop": true,
-    "items": [ 305, 306, 307, 308 ],
+    "items": [ 343, 305, 306, 307, 308 ],
     "isExpensive": true,
     "npcIDs": [ 57 ],
     "isTannery": true,
     "tannerySlots": 3,
     "maxTannerySlots": 5
+  },
+  {
+    "name": "Woodworker's Association",
+    "id": 63,
+    "url": "WoodWorkersAssociation",
+    "description": "You enter a long hall surrounded on all sides by various statues, carvings, and woodworking tools. Some booths here and there are selling some.",
+    "isShop": true,
+    "items": [ 6, 344, 143, 145, 147, 149, 151, 153, 155 ],
+    "isExpensive": true,
+    "npcIDs": [ 59, 60]
   }
 
 ]
