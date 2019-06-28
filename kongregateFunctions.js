@@ -1,11 +1,17 @@
 ﻿window.kongregateFunctions = {
 
-    loadAPI:function() {
-        window.kongregate = kongregateAPI.getAPI();
+    getUsername:function() {
         // You can now access the Kongregate API with:
         // kongregate.services.getUsername(), etc
         // Proceed with loading your game...
-        console.log(window.kongregate.services.getUsername());
+        if (kongregate.services.isGuest()) {
+            return "You are a guest.";
+        } else {
+            return kongregate.getUsername();
+        }
+    },
+    updateTotalLevelScore: function (totalLevel) {
+        kongregate.stats.submit("Total Level", totalLevel);
     }
 
 };
