@@ -2940,7 +2940,7 @@
     "madeOnCreation": 5,
     "isUsable": true,
     "usableIDs": [
-      [ 186, 198 ]
+      [ 186, 198 ],
       [ 188, 200 ]
     ],
     "destroyOnUse": true,
