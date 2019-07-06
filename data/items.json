@@ -5591,6 +5591,7 @@
     "requiredLevel": 85,
     "experienceGained": "Hunting:1200",
     "icon": "Deer"
+<<<<<<< HEAD
   },
   {
     "itemName": "River Clam Roll",
@@ -5610,3 +5611,7 @@
     "icon": "Roll"
   }
 ]
+=======
+  }
+]
+>>>>>>> ae203cb067edfb4604365d7e072b1103ba232bd9
