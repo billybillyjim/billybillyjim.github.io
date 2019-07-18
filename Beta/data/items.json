@@ -4974,7 +4974,7 @@
   {
     "itemName": "Woodworker's Gloves",
     "id": 344,
-    "value": 200000,
+    "value": 150000,
     "itemDescription": "These gloves will help you learn more about woodworking as you work with wood.",
     "isEquipable": true,
     "equipSlot": "Hands",

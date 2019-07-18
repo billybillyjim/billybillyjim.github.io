@@ -1,5 +1,5 @@
 ﻿window.kongregateFunctions = {
-
+    
     getUsername: function () {
         // You can now access the Kongregate API with:
         // kongregate.services.getUsername(), etc
@@ -35,6 +35,18 @@
     },
     updateTotalKills: function (totalKills) {
         window.kongregate.stats.submit("Total Kills", totalKills);
+    },
+    purchasePet: function (petIdentifier) {
+        window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+    },
+    onPurchaseResult: function (result) {
+        if (result.success == true) {
+            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');
+        }
+        else {
+            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');
+        }
+        
     },
     createSortableList: function (listElement) {
         Sortable.create(listElement, {
