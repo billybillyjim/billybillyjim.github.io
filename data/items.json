@@ -7080,5 +7080,18 @@
     "value": 100000000,
     "isStackable": true,
     "icon": "Gold"
-  }
+  },
+   {
+    "itemName": "Woolly Mammoth",
+    "itemDescription": "The carcass of a woolly mammoth.",
+    "id": 484,
+    "value": 5000,
+    "isUnpackable": true,
+    "unpackIDs": [ 437, 76 ],
+    "unpackString": "Gut",
+    "actionRequired": "Hunting",
+    "requiredLevel": 105,
+    "experienceGained": "Hunting:6000",
+    "icon": "Deer"
+  },
 ]

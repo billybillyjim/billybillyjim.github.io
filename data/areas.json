@@ -847,7 +847,7 @@
     "icon": "oi oi-random",
     "actions": [ "Hunting", "Bait Fishing" ],
     "region": "Caligin Commonwealth",
-    "huntingIDs": [ 71, 67, 69, 434 ]
+    "huntingIDs": [ 71, 67, 69, 436 ]
   },
   {
     "name": "Sahota Dungeon",
